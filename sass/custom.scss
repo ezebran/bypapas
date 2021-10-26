@@ -1,0 +1,191 @@
+$font-family-sans-serif: 'Open Sans', sans-serif;
+
+$primary:#FFD600;
+$dark:#13110c;
+$black-bg: #212121;
+$navbar-dark-hover-color: red;
+
+.logo-container{
+    .logo{
+        width: 7.5em;
+    }
+}
+
+.btn-menu{
+    color:white;
+    width: inherit !important;
+    display: flex;
+}
+.ls-none{
+    list-style: none;
+}
+
+.somos_img{
+    width: 90%;
+    height: fit-content;
+}
+
+.hacemos{
+    background: $black-bg;
+    padding: 9em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1{
+        color:white;
+    }
+    ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        li{
+            border:1px solid $primary;
+            width: 23%;
+            height: 16em;
+            h2{
+                color:$primary;
+                font-size: 1.3em;
+            }
+            p{
+                color:white;
+            }
+        }
+    }
+}
+
+.estamos{
+    ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        li{
+            background: $black-bg;
+            width: 23%;
+            img{
+                width: 100%;
+            }
+            .sub-info{
+                padding: 5em 1em;
+                h4{
+                    color:white;
+                }
+                .donde-dire{
+                    color:$primary;
+                }
+            }
+        }
+    }
+}
+
+.galeria{
+    .fotos{
+        img{
+            width: 33%;
+        }
+    }
+}
+
+.contacto{
+    background: url(../images/contacto_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    .contacto__form{
+        width: 40em;
+        .input-gruop{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            input{
+                width: 49%;
+            }
+        }
+        .enviar{
+            background: $primary;
+            border: none;
+            padding: 1em 5em;
+            font-weight: 600;
+        }
+    }
+    .info{
+        h1{
+            font-size: 5em;
+            color: white;
+            font-weight: 200;
+        }
+        p{
+            color: white;
+            font-size: 1.2em;
+            img{
+                margin-right: 0.5em;
+            }
+        }
+    }
+}
+
+.nav-xl{
+    display: flex;
+    li{
+        list-style: none;
+    }
+}
+
+footer{
+    background: #13110c;
+    padding: 1em 2em;
+}
+
+@media screen and (max-width: 975px){
+    .nav-xl{
+        display: none;
+    }
+    .contacto{
+        flex-direction: column;
+        .contacto__form{
+            .input-gruop{
+                flex-direction: column;
+            }
+            textarea{
+                width: initial !important;
+            }
+        }
+    }
+    .hacemos{
+        ul{
+            flex-direction: column;
+            li{
+                width: inherit;
+                margin-bottom: 2em;
+            }
+        }
+    }
+    .estamos{
+        ul{
+            flex-direction: column;
+            padding: 0;
+            li{
+                width: inherit;
+                margin-bottom: 2em;
+            }
+        }
+    }
+    .somos-content{
+        flex-direction: column;
+        .somos_cont{
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (min-width: 975px){
+    .btn-menu{
+        display: none;
+    }
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap";
