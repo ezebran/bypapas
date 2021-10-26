@@ -59,7 +59,7 @@ $navbar-dark-hover-color: red;
     ul{
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         li{
             background: $black-bg;
@@ -140,18 +140,32 @@ footer{
     padding: 1em 2em;
 }
 
+textarea{
+    height: 12em;
+}
+
 @media screen and (max-width: 975px){
     .nav-xl{
         display: none;
     }
     .contacto{
         flex-direction: column;
+        padding: 0.5em;
         .contacto__form{
+            width:100%;
             .input-gruop{
                 flex-direction: column;
+                input{
+                    width: 100%;
+                }
             }
             textarea{
-                width: initial !important;
+                height: 12em;
+            }
+        }
+        .info{
+            h1{
+                font-size: 3em;
             }
         }
     }

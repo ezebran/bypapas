@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="./css/custom.css">
     <!-- Bootstrap CSS -->
     <title>Bypapas!</title>
@@ -25,40 +25,40 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarText">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu-desk">
                         <li class="nav-item">
-                            <a href="#" class="nav-link text-white">Quiénes somos</a>
+                            <a href="#somos" class="nav-link text-white">Quiénes somos</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link text-white">Cómo lo hacemos</a>
+                            <a href="#hacemos" class="nav-link text-white">Cómo lo hacemos</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link text-white">Dónde estamos</a>
+                            <a href="#estamos" class="nav-link text-white">Dónde estamos</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link text-white">Imágenes</a>
+                            <a href="#galeria" class="nav-link text-white">Imágenes</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link text-white">Contacto</a>
+                            <a href="#contacto" class="nav-link text-white">Contacto</a>
                         </li>
                     </ul>
                   </div>
 
-                <ul class=" col-10 nav-xl  align-items-center justify-content-between">
+                <ul class=" col-10 nav-xl  align-items-center justify-content-between menu-resp">
                     <li class="nav-item">
-                        <a href="#" class="nav-link text-white">Quiénes somos</a>
+                        <a href="#somos" class="nav-link text-white">Quiénes somos</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link text-white">Cómo lo hacemos</a>
+                        <a href="#hacemos" class="nav-link text-white">Cómo lo hacemos</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link text-white">Dónde estamos</a>
+                        <a href="#estamos" class="nav-link text-white">Dónde estamos</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link text-white">Imágenes</a>
+                        <a href="#galeria" class="nav-link text-white">Imágenes</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link text-white">Contacto</a>
+                        <a href="#contacto" class="nav-link text-white">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -67,7 +67,7 @@
     <section class="container-fluid banner-home p-0">
         <img src="./images/banner.png" alt="banner-home" class="w-100">
     </section>
-    <section class="somos w-100 p-0 d-flex justify-content-center align-items-center flex-column pb-5">
+    <section class="somos w-100 p-0 d-flex justify-content-center align-items-center flex-column pb-5" id="somos">
         <h1 class="fw-bold mt-5 pt-4 mb-5 pb-4">Quienes somos</h1>
         <div class="row w-100">
             <div class="somos-content col-12 d-flex justify-content-between p-0">
@@ -90,7 +90,7 @@
             </div>
         </div>
     </section>
-    <section class="hacemos w-100 ">
+    <section class="hacemos w-100 " id="hacemos">
         <h1 class="fw-bold">CÓMO LO HACEMOS</h1>
         <ul class="hacemos-content w-100 p-5 ">
             <li class="p-4 d-flex justify-content-center align-items-center flex-column">
@@ -112,7 +112,7 @@
         </ul>
     </section>
 
-    <section class="estamos w-100 d-flex justify-content-center align-items-center flex-column p-5">
+    <section class="estamos w-100 d-flex justify-content-center align-items-center flex-column p-5" id="estamos">
         <h1 class="fw-bold m-3">DÓNDE ESTAMOS</h1>
 
         <ul class="w-100 pt-5 pb-5">
@@ -150,7 +150,7 @@
         </ul>
     </section>
 
-    <section class="galeria w-100 d-flex justify-content-center align-items-center flex-column p-5">
+    <section class="galeria w-100 d-flex justify-content-center align-items-center flex-column p-5" id="galeria">
         <h1 class="fw-bold m-3">Galeria de fotos</h1>
         <div class="fotos w-100 pt-5 pb-5 d-flex justify-content-between align-items-center flex-row">
             <img src="./images/galeria_1.png" alt="galeria_1">
@@ -159,7 +159,7 @@
         </div>
     </section>
 
-    <section class="contacto w-100 p-5 d-flex justify-content-between align-items-center flex-md-row flex-sm-column">
+    <section class="contacto w-100 p-5 d-flex justify-content-between align-items-center flex-md-row flex-sm-column" id="contacto">
         <div class="info">
             <h1>CONTACTO</h1>
             <p class="pt-4 pb-3">
@@ -188,8 +188,9 @@
                 <input type="text" placeholder="Zona de interes" class="p-3">
                 <input type="text" placeholder="¿Cóntas con local comercial? (Dirección)" class="p-3">
             </div>
-
-            <textarea class="w-100 p-3 mt-1" name="mensaje" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+            <div class="input-gruop">
+                <textarea class="w-100 p-3 mt-1" name="mensaje" id="" placeholder="Mensaje"></textarea>
+            </div>
             <div class="input-gruop d-flex justify-content-center align-items-center flex-row pb-2 pt-2 w-100">
                 <button class="enviar">Enviar</button>
             </div>
@@ -208,5 +209,7 @@
         </div>
     </footer>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/smooth-scroll.js"></script>
   </body>
 </html>

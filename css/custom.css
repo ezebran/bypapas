@@ -82,9 +82,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -184,6 +184,10 @@ footer {
   padding: 1em 2em;
 }
 
+textarea {
+  height: 12em;
+}
+
 @media screen and (max-width: 975px) {
   .nav-xl {
     display: none;
@@ -193,6 +197,10 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding: 0.5em;
+  }
+  .contacto .contacto__form {
+    width: 100%;
   }
   .contacto .contacto__form .input-gruop {
     -webkit-box-orient: vertical;
@@ -200,8 +208,14 @@ footer {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .contacto .contacto__form .input-gruop input {
+    width: 100%;
+  }
   .contacto .contacto__form textarea {
-    width: initial !important;
+    height: 12em;
+  }
+  .contacto .info h1, .contacto .info .h1 {
+    font-size: 3em;
   }
   .hacemos ul {
     -webkit-box-orient: vertical;
